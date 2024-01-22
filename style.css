@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-size: 1.6rem;
+  display: grid;
+  overflow: hidden;
+  place-items: center;
+
+  overflow: hidden;
+
+  background: linear-gradient(45deg, #190361 0%, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+main {
+  background: white;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  border-radius: 0.5rem;
+
+  width: min(42.8rem);
+
+  margin: 12rem;
+}
+
+/* screen1 */
+
+#closedCookie:hover {
+  animation: vibrar 0.8s ease infinite;
+}
+
+.screen1 h1 {
+  text-align: center;
+  color: #34355b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  line-height: normal;
+  margin-bottom: 1.4rem;
+}
+
+.screen1 p {
+  color: #34355b;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2.6rem;
+}
+
+/* screen2 */
+
+.screen2 h1 {
+  text-align: center;
+  color: #34355b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  line-height: normal;
+  margin-bottom: 1.4rem;
+}
+
+#randomPhrase {
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  color: #000000;
+  padding: 1rem;
+  margin-top: 1.7rem;
+}
+
+#openedCookie {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+
+#btnTry {
+  background: #ff9500;
+  display: flex;
+  padding: 1.6rem;
+  align-items: flex-start;
+  font-family: "DM Sans", sans-serif;
+  gap: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  border-style: none;
+  margin: auto;
+}
+
+#btnTry:hover {
+  background: #ca7600;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes vibrar {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
